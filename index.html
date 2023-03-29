@@ -9,17 +9,14 @@
     /* 
     PROBLEM 1: Write a function called userClick that logs a message to the console when a user clicks.
     */
+   
     //ENTER YOUR CODE HERE
-     window.onclick = () => console.log(`The answer to life is 42.`);
+
     /* 
     PROBLEM 2: Write a function called clickCounter that increments a counter variable and logs the current count to the console each time the user clicks.
     */
 
     //ENTER YOUR CODE HERE
-      window.onclick = () => {
-          count++;
-          console.log(`Button clicked ${count} times.`);
-        }
 
      /* 
     PROBLEM 3: Rewrite this function into a browser event using window.onclick.
@@ -38,29 +35,15 @@
     */
 
     //ENTER YOUR CODE HERE
-  window.onclick = () => {
-    const currentColor = 'red';
-
-  if (currentColor === 'red') {
-      console.log('Background is red');
-      currentColor = 'green';
-    } else {
-      console.log('Background is green');
-      currentColor = 'red';
-    }
-  }
 
     /* 
     PROBLEM 4: Create a function that prints a random color to the console every time the user clicks anywhere on the page. Here is the formula for a random color:
 
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     */
+
     //ENTER YOUR CODE HERE
 
-        window.onclick = () => {
-          const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-          console.log(randomColor);
-        }
       
     /* 
     PROBLEM 5 (DEBUGGING): When the window loads, a counter variable is initialized to 0. Whenever the user clicks anywhere on the window, the counter variable is incremented and the current count is logged to the console. However, the counter variable is not incrementing correctly. When the user clicks on the window, the console logs "Click count: NaN". Fix the code to ensure that the counter variable increments correctly each time the user clicks on the window and that the current count is logged to the console.
@@ -74,13 +57,9 @@
       };
     };
     */
-    window.onload = () => {
-        let counter = 0;
-        window.onclick = () => {
-          counter++;
-          console.log(`Click count: ${counter}`); //template literals use string interpolation so counter is being converted into a string. We need to make any changes needed before placing the counter in the template literal.
-        };
-      };
+
+    //ENTER YOUR CODE HERE
+
   </script> 
   <section style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
     <h3>About The Solutions</h3>
