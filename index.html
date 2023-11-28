@@ -10,7 +10,7 @@
     PROBLEM 1: Write a function that logs a message to the console when a user clicks.
     */
    
-    //ENTER YOUR CODE HERE
+    window.onclick = () => console.log('You clicked.');
 
     /* 
     PROBLEM 2: Write a function called clickCounter that increments a counter variable and logs the current count to the console each time the user clicks.
@@ -22,16 +22,16 @@
     PROBLEM 3: Rewrite this function into a browser event using window.onclick.
     
     function toggleBackground() {
-  const currentColor = 'red';
-  
-  if (currentColor === 'red') {
-    console.log('Background is red');
-    currentColor = 'green';
-  } else {
-    console.log('Background is green');
-    currentColor = 'red';
-  }
-}
+      const currentColor = 'red';
+      
+      if (currentColor === 'red') {
+        console.log('Background is red');
+        currentColor = 'green';
+      } else {
+        console.log('Background is green');
+        currentColor = 'red';
+      }
+    }
     */
 
     //ENTER YOUR CODE HERE
@@ -44,21 +44,21 @@
 
     //ENTER YOUR CODE HERE
 
-      
+
     /* 
     PROBLEM 5 (DEBUGGING): When the window loads, a counter variable is initialized to 0. Whenever the user clicks anywhere on the window, the counter variable is incremented and the current count is logged to the console. However, the counter variable is not incrementing correctly. When the user clicks on the window, the console logs "Click count: NaN". Fix the code to ensure that the counter variable increments correctly each time the user clicks on the window and that the current count is logged to the console.
 
     window.onload is basically the same as onclick except for when the page loads: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+    */
 
-        window.onload = () => {
-      let counter = 0;
+    /*
+    window.onload = () => {
+      let counter;
       window.onclick = () => {
         console.log(`Click count: ${++counter}`);
       };
     };
     */
-
-    //ENTER YOUR CODE HERE
 
   </script> 
   <section style="border: 2px solid blue; border-radius: 5px; padding: 10px; box-shadow: 5px 3px 3px orange; margin-top: 20px;">
