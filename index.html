@@ -10,13 +10,19 @@
     PROBLEM 1: Write a function that logs a message to the console when a user clicks.
     */
    
-    window.onclick = () => console.log('You clicked.');
+    window.onclick = () => console.log('You clicked [1].');
 
     /* 
     PROBLEM 2: Write a function called clickCounter that increments a counter variable and logs the current count to the console each time the user clicks.
     */
 
-    //ENTER YOUR CODE HERE
+    clickCounter = () => {
+      let count = 0;
+      window.onclick = () => {
+        count++;
+        console.log(`${count} times`);
+      }
+    }
 
      /* 
     PROBLEM 3: Rewrite this function into a browser event using window.onclick.
