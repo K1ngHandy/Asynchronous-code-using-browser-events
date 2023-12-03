@@ -41,7 +41,19 @@
     }
     */
 
-    //ENTER YOUR CODE HERE
+    const backgroundToggle = () => {
+      let currentColor = 'red';
+      
+      if (currentColor === 'red') {
+        console.log('Background is red');
+        currentColor = 'green';
+      } else {
+        console.log('Background is green');
+        currentColor = 'red';
+      }
+    }
+
+    window.onclick = backgroundToggle;
 
     /* 
     PROBLEM 4: Create a function that prints a random color to the console every time the user clicks anywhere on the page. Here is the formula for a random color:
