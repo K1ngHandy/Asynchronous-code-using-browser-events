@@ -16,13 +16,14 @@
     PROBLEM 2: Write a function called clickCounter that increments a counter variable and logs the current count to the console each time the user clicks.
     */
 
-    clickCounter = () => {
       let count = 0;
-      window.onclick = () => {
+    
+      const clickCounter = () => {
         count++;
         console.log(`${count} times`);
       }
-    }
+
+    window.onclick = clickCounter;
 
      /* 
     PROBLEM 3: Rewrite this function into a browser event using window.onclick.
