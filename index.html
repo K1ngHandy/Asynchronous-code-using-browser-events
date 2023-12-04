@@ -41,8 +41,8 @@
     }
     */
 
+    let currentColor = 'red'; // moved outside of function scope
     const backgroundToggle = () => {
-      let currentColor = 'red';
       
       if (currentColor === 'red') {
         console.log('Background is red');
@@ -53,7 +53,7 @@
       }
     }
 
-    window.onclick = backgroundToggle;
+    window.onclick = backgroundToggle; // add onclick listener
 
     /* 
     PROBLEM 4: Create a function that prints a random color to the console every time the user clicks anywhere on the page. Here is the formula for a random color:
